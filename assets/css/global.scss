@@ -1,0 +1,86 @@
+@import 'palette';
+
+body{
+  font-family: 'Quicksand', sans-serif;
+  background-image: url(/images/background.jpg);
+  background-size: cover;
+  background-color: #8b8487;
+  background-blend-mode: multiply;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+  color:$white;
+}
+select{
+  float: left;
+  margin-left:20px;
+  margin-top: -50px;
+}
+
+.notification-nodes {
+  top:50%;
+  .notificationBox {
+    padding: 10px;
+    margin: 10px;
+    display:inline-block;
+    .notificationIcon {
+      width: 60px;
+      height: 60px;
+      float: left;
+      img {
+        width: 40px;
+        height: 40px;
+        margin: 10px;
+      }
+    }
+    .notificationDetails {
+      float: left;
+      background-color: $blue;
+      color: $white;
+      height: 55px;
+      padding: 5px 20px 0 0;
+      ul {
+        padding: 0 10px 0 20px;
+        text-align: left;
+        li {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          .datetime {
+            font-style: italic;
+            color: $salmon;
+            padding-right: 10px;
+          }
+        }
+        a {
+          font-weight: bold;
+          span {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 200px;
+            display: block;
+            overflow: hidden
+          }
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+        .ath-btn-1 {
+          margin: 5px;
+        }
+      }
+    }
+    .shit{
+      background-color: $shit;
+    }
+    .good{
+      background-color: $salmon;
+    }
+    .great{
+      background-color: $great;
+    }
+  }
+}
+

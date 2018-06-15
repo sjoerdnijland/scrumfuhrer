@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('build/css/app.css') }}">
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script type="text/babel">
+
+        //get the data from the back-end
+        window.teamId = {{ data|json_encode|raw  }}
+
+    </script>
+
+    <script src="{{ asset('build/js/app.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+    <div id="root"></div>
+{% endblock %}
+
+
+
